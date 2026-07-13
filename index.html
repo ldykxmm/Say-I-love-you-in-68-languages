@@ -227,7 +227,7 @@
       color: white;
       font-size: 20px;
       box-shadow: 0 0 10px rgba(255, 105, 180, 0.5);
-      transition: all 0.3s ease;
+      transition: all 0.3 ease;
     }
     
     .music-btn:hover {
@@ -726,8 +726,8 @@
 
   <!-- 音乐播放器 -->
   <audio id="bgMusic" loop>
-    <source src="https://img.burnham.xin/file/CQACAgUAAyEGAASs1u0bAANkaQm_z_MZDHLC5YHuCgkoOa239OUAAqwcAAKsl0lUwENoW90eIjw2BA.mp3" type="audio/mpeg">
-    <source src="https://img.burnham.xin/file/CQACAgUAAyEGAASs1u0bAANkaQm_z_MZDHLC5YHuCgkoOa239OUAAqwcAAKsl0lUwENoW90eIjw2BA.mp3" type="audio/ogg">
+    <source src="https://img.burnham.xin/file/music/CQACAgUAAyEGAASs1u0bAANkaQm_z_MZDHLC5YHuCgkoOa239OUAAqwcAAKsl0lUwENoW90eIjw2BA.mp3" type="audio/mpeg">
+    <source src="https://img.burnham.xin/file/music/CQACAgUAAyEGAASs1u0bAANkaQm_z_MZDHLC5YHuCgkoOa239OUAAqwcAAKsl0lUwENoW90eIjw2BA.mp3" type="audio/ogg">
   </audio>
 
   <script>
@@ -807,7 +807,7 @@
     function stopSnow() { 
       snowRunning = false; 
       cancelAnimationFrame(snowFrame); 
-      document.querySelectorAll('.snow').forEach(s => s.remove()); 
+      document.querySelectorAll('.snow').forEach( => .remove()); 
     }
 
     // 启动雪花效果
